@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Defines text-indentation function."""
+# 5-text_indentation.py
+"""Defines a text-indentation function."""
 
 
 def text_indentation(text):
@@ -8,10 +9,10 @@ def text_indentation(text):
     Args:
         text (string): The text to print.
     Raises:
-        TypeError: If text is not string.
+        TypeError: If text is not a string.
     """
     if not isinstance(text, str):
-        raise TypeError("text must be string")
+        raise TypeError("text must be a string")
 
     c = 0
     while c < len(text) and text[c] == ' ':
@@ -27,3 +28,4 @@ def text_indentation(text):
                 c += 1
             continue
         c += 1
+
