@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# 2-matrix_divided.py
 """Defines matrix division function."""
 
 
@@ -14,7 +15,7 @@ def matrix_divided(matrix, div):
         TypeError: If div is not an int or float.
         ZeroDivisionError: If div is 0.
     Returns:
-        A new matrix representing result of the division.
+        A new matrix representing the result of the division.
     """
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
